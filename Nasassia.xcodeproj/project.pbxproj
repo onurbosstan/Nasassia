@@ -66,11 +66,10 @@
 		C61FFCE82B62AECE0024E893 /* Nasassia */ = {
 			isa = PBXGroup;
 			children = (
+				C61FFD0E2B62B61A0024E893 /* Delegates */,
 				C61FFCFF2B62B03F0024E893 /* Helper */,
 				C61FFCFE2B62B0320024E893 /* Service */,
 				C61FFCFD2B62B02A0024E893 /* Scenes */,
-				C61FFCE92B62AECE0024E893 /* AppDelegate.swift */,
-				C61FFCEB2B62AECE0024E893 /* SceneDelegate.swift */,
 				C61FFCED2B62AECE0024E893 /* ViewController.swift */,
 				C61FFCEF2B62AECE0024E893 /* Main.storyboard */,
 				C61FFCF22B62AED00024E893 /* Assets.xcassets */,
@@ -109,6 +108,15 @@
 				C61FFD022B62B0680024E893 /* rocket.json */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		C61FFD0E2B62B61A0024E893 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C61FFCE92B62AECE0024E893 /* AppDelegate.swift */,
+				C61FFCEB2B62AECE0024E893 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
