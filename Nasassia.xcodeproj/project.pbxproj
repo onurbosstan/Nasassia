@@ -13,6 +13,11 @@
 		C61FFCF12B62AECE0024E893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61FFCEF2B62AECE0024E893 /* Main.storyboard */; };
 		C61FFCF32B62AED00024E893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61FFCF22B62AED00024E893 /* Assets.xcassets */; };
 		C61FFCF62B62AED00024E893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61FFCF42B62AED00024E893 /* LaunchScreen.storyboard */; };
+		C61FFD012B62B0590024E893 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61FFD002B62B0590024E893 /* AnimationHelper.swift */; };
+		C61FFD032B62B0680024E893 /* rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = C61FFD022B62B0680024E893 /* rocket.json */; };
+		C61FFD072B62B0FD0024E893 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C61FFD062B62B0FD0024E893 /* Lottie */; };
+		C61FFD0A2B62B11B0024E893 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C61FFD092B62B11B0024E893 /* Kingfisher */; };
+		C61FFD0D2B62B12C0024E893 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C61FFD0C2B62B12C0024E893 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,8 @@
 		C61FFCF22B62AED00024E893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61FFCF52B62AED00024E893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61FFCF72B62AED00024E893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C61FFD002B62B0590024E893 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
+		C61FFD022B62B0680024E893 /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61FFD0D2B62B12C0024E893 /* Alamofire in Frameworks */,
+				C61FFD0A2B62B11B0024E893 /* Kingfisher in Frameworks */,
+				C61FFD072B62B0FD0024E893 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,9 @@
 		C61FFCE82B62AECE0024E893 /* Nasassia */ = {
 			isa = PBXGroup;
 			children = (
+				C61FFCFF2B62B03F0024E893 /* Helper */,
+				C61FFCFE2B62B0320024E893 /* Service */,
+				C61FFCFD2B62B02A0024E893 /* Scenes */,
 				C61FFCE92B62AECE0024E893 /* AppDelegate.swift */,
 				C61FFCEB2B62AECE0024E893 /* SceneDelegate.swift */,
 				C61FFCED2B62AECE0024E893 /* ViewController.swift */,
@@ -65,6 +78,37 @@
 				C61FFCF72B62AED00024E893 /* Info.plist */,
 			);
 			path = Nasassia;
+			sourceTree = "<group>";
+		};
+		C61FFCFD2B62B02A0024E893 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C61FFCFE2B62B0320024E893 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C61FFCFF2B62B03F0024E893 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C61FFD042B62B07E0024E893 /* Animation */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C61FFD042B62B07E0024E893 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C61FFD002B62B0590024E893 /* AnimationHelper.swift */,
+				C61FFD022B62B0680024E893 /* rocket.json */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +127,11 @@
 			dependencies = (
 			);
 			name = Nasassia;
+			packageProductDependencies = (
+				C61FFD062B62B0FD0024E893 /* Lottie */,
+				C61FFD092B62B11B0024E893 /* Kingfisher */,
+				C61FFD0C2B62B12C0024E893 /* Alamofire */,
+			);
 			productName = Nasassia;
 			productReference = C61FFCE62B62AECE0024E893 /* Nasassia.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,11 @@
 				Base,
 			);
 			mainGroup = C61FFCDD2B62AECE0024E893;
+			packageReferences = (
+				C61FFD052B62B0FD0024E893 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C61FFD082B62B11B0024E893 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C61FFD0B2B62B12C0024E893 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C61FFCE72B62AECE0024E893 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +182,7 @@
 				C61FFCF62B62AED00024E893 /* LaunchScreen.storyboard in Resources */,
 				C61FFCF32B62AED00024E893 /* Assets.xcassets in Resources */,
 				C61FFCF12B62AECE0024E893 /* Main.storyboard in Resources */,
+				C61FFD032B62B0680024E893 /* rocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61FFD012B62B0590024E893 /* AnimationHelper.swift in Sources */,
 				C61FFCEE2B62AECE0024E893 /* ViewController.swift in Sources */,
 				C61FFCEA2B62AECE0024E893 /* AppDelegate.swift in Sources */,
 				C61FFCEC2B62AECE0024E893 /* SceneDelegate.swift in Sources */,
@@ -363,6 +419,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C61FFD052B62B0FD0024E893 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+		C61FFD082B62B11B0024E893 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
+		C61FFD0B2B62B12C0024E893 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C61FFD062B62B0FD0024E893 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C61FFD052B62B0FD0024E893 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		C61FFD092B62B11B0024E893 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C61FFD082B62B11B0024E893 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C61FFD0C2B62B12C0024E893 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C61FFD0B2B62B12C0024E893 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C61FFCDE2B62AECE0024E893 /* Project object */;
 }
