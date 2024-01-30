@@ -18,6 +18,16 @@
 		C61FFD072B62B0FD0024E893 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C61FFD062B62B0FD0024E893 /* Lottie */; };
 		C61FFD0A2B62B11B0024E893 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C61FFD092B62B11B0024E893 /* Kingfisher */; };
 		C61FFD0D2B62B12C0024E893 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C61FFD0C2B62B12C0024E893 /* Alamofire */; };
+		C648BD9F2B67E32400E1569E /* RoverPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648BD9E2B67E32400E1569E /* RoverPhotoCell.swift */; };
+		C648BDA12B67E4D600E1569E /* RoverPhotoCellFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648BDA02B67E4D600E1569E /* RoverPhotoCellFlowLayout.swift */; };
+		C648BDA32B67E5CB00E1569E /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648BDA22B67E5CB00E1569E /* Routes.swift */; };
+		C648BDA62B67E7FC00E1569E /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648BDA52B67E7FC00E1569E /* PhotoService.swift */; };
+		C648BDA92B67E89400E1569E /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648BDA82B67E89400E1569E /* RestClient.swift */; };
+		C648BDB02B67ED7300E1569E /* PhotoDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648BDAF2B67ED7300E1569E /* PhotoDataHandler.swift */; };
+		C648BDB22B67EDB800E1569E /* PhotoDetailViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648BDB12B67EDB800E1569E /* PhotoDetailViewContoller.swift */; };
+		C69A78F62B640A67002DB95C /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A78F52B640A67002DB95C /* PhotoModel.swift */; };
+		C69A78F92B656340002DB95C /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A78F82B656340002DB95C /* PhotoViewController.swift */; };
+		C69A78FB2B656364002DB95C /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A78FA2B656364002DB95C /* TabbarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +41,16 @@
 		C61FFCF72B62AED00024E893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C61FFD002B62B0590024E893 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		C61FFD022B62B0680024E893 /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
+		C648BD9E2B67E32400E1569E /* RoverPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoCell.swift; sourceTree = "<group>"; };
+		C648BDA02B67E4D600E1569E /* RoverPhotoCellFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoCellFlowLayout.swift; sourceTree = "<group>"; };
+		C648BDA22B67E5CB00E1569E /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		C648BDA52B67E7FC00E1569E /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		C648BDA82B67E89400E1569E /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		C648BDAF2B67ED7300E1569E /* PhotoDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataHandler.swift; sourceTree = "<group>"; };
+		C648BDB12B67EDB800E1569E /* PhotoDetailViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewContoller.swift; sourceTree = "<group>"; };
+		C69A78F52B640A67002DB95C /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		C69A78F82B656340002DB95C /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		C69A78FA2B656364002DB95C /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				C61FFD0E2B62B61A0024E893 /* Delegates */,
-				C61FFCFF2B62B03F0024E893 /* Helper */,
-				C61FFCFE2B62B0320024E893 /* Service */,
-				C61FFCFD2B62B02A0024E893 /* Scenes */,
+				C69192E02B66C26E00EC4F02 /* Data */,
+				C69192DC2B66C23800EC4F02 /* UI */,
+				C69192DD2B66C24600EC4F02 /* Cell */,
+				C69192DE2B66C25800EC4F02 /* ViewController */,
+				C69192E32B66C28F00EC4F02 /* Animation */,
 				C61FFCED2B62AECE0024E893 /* ViewController.swift */,
 				C61FFCEF2B62AECE0024E893 /* Main.storyboard */,
 				C61FFCF22B62AED00024E893 /* Assets.xcassets */,
@@ -79,37 +101,6 @@
 			path = Nasassia;
 			sourceTree = "<group>";
 		};
-		C61FFCFD2B62B02A0024E893 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		C61FFCFE2B62B0320024E893 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		C61FFCFF2B62B03F0024E893 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				C61FFD042B62B07E0024E893 /* Animation */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		C61FFD042B62B07E0024E893 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				C61FFD002B62B0590024E893 /* AnimationHelper.swift */,
-				C61FFD022B62B0680024E893 /* rocket.json */,
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
 		C61FFD0E2B62B61A0024E893 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +108,93 @@
 				C61FFCEB2B62AECE0024E893 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C648BDA42B67E7D700E1569E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C648BDA52B67E7FC00E1569E /* PhotoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C648BDA72B67E88300E1569E /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				C648BDA82B67E89400E1569E /* RestClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		C648BDAA2B67E8D800E1569E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C69A78F52B640A67002DB95C /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C648BDAE2B67ED5100E1569E /* DataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				C648BDAF2B67ED7300E1569E /* PhotoDataHandler.swift */,
+			);
+			path = DataHandler;
+			sourceTree = "<group>";
+		};
+		C69192DC2B66C23800EC4F02 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C648BDAE2B67ED5100E1569E /* DataHandler */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C69192DD2B66C24600EC4F02 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C648BD9E2B67E32400E1569E /* RoverPhotoCell.swift */,
+				C648BDA02B67E4D600E1569E /* RoverPhotoCellFlowLayout.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C69192DE2B66C25800EC4F02 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C69A78F82B656340002DB95C /* PhotoViewController.swift */,
+				C69A78FA2B656364002DB95C /* TabbarViewController.swift */,
+				C648BDB12B67EDB800E1569E /* PhotoDetailViewContoller.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C69192E02B66C26E00EC4F02 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C69192E12B66C27A00EC4F02 /* API */,
+				C648BDAA2B67E8D800E1569E /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C69192E12B66C27A00EC4F02 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C648BDA22B67E5CB00E1569E /* Routes.swift */,
+				C648BDA42B67E7D700E1569E /* Service */,
+				C648BDA72B67E88300E1569E /* Client */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C69192E32B66C28F00EC4F02 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C61FFD002B62B0590024E893 /* AnimationHelper.swift */,
+				C61FFD022B62B0680024E893 /* rocket.json */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,10 +279,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C648BDA12B67E4D600E1569E /* RoverPhotoCellFlowLayout.swift in Sources */,
+				C648BDA62B67E7FC00E1569E /* PhotoService.swift in Sources */,
 				C61FFD012B62B0590024E893 /* AnimationHelper.swift in Sources */,
+				C648BDB22B67EDB800E1569E /* PhotoDetailViewContoller.swift in Sources */,
 				C61FFCEE2B62AECE0024E893 /* ViewController.swift in Sources */,
+				C648BDA92B67E89400E1569E /* RestClient.swift in Sources */,
+				C69A78FB2B656364002DB95C /* TabbarViewController.swift in Sources */,
 				C61FFCEA2B62AECE0024E893 /* AppDelegate.swift in Sources */,
+				C69A78F62B640A67002DB95C /* PhotoModel.swift in Sources */,
+				C648BDB02B67ED7300E1569E /* PhotoDataHandler.swift in Sources */,
+				C69A78F92B656340002DB95C /* PhotoViewController.swift in Sources */,
+				C648BDA32B67E5CB00E1569E /* Routes.swift in Sources */,
 				C61FFCEC2B62AECE0024E893 /* SceneDelegate.swift in Sources */,
+				C648BD9F2B67E32400E1569E /* RoverPhotoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
