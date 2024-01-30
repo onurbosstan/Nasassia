@@ -12,9 +12,9 @@ class TabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let vc1 = storyboard?.instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
-        let vc2 = storyboard?.instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
-        let vc3 = storyboard?.instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
+        let vc1 = storyboard?.instantiateViewController(withIdentifier: "ImageViewController") as! PhotoViewController
+        let vc2 = storyboard?.instantiateViewController(withIdentifier: "ImageViewController") as! PhotoViewController
+        let vc3 = storyboard?.instantiateViewController(withIdentifier: "ImageViewController") as! PhotoViewController
         
         vc1.availableCameras = [.ALL, .FHAZ, .RHAZ, .MAST, .CHEMCAM, .MAHLI, .MARDI, .NAVCAM]
         vc2.availableCameras = [.ALL, .FHAZ, .RHAZ, .NAVCAM, .PANCAM, .MINITES]
@@ -34,6 +34,4 @@ class TabbarViewController: UITabBarController {
         self.tabBar.items?[1].image = UIImage(named: vc2.rover.description)
         self.tabBar.items?[2].image = UIImage(named: vc3.rover.description)
     }
-
-
 }

@@ -27,29 +27,30 @@ struct RoverModel : Codable {
 
 struct CameraModel : Codable {
     let name : String
+    let full_name: String
 }
 
 enum Rover : String,Codable,CustomStringConvertible {
-    var description: String{
+    var description: String {
         return self.rawValue
     }
-    case Curiosity
-    case Opportunity
-    case Spirit
+    case Curiosity = "Curiosity"
+    case Opportunity = "Opportunity"
+    case Spirit = "Spirit"
 }
 
 enum NasaCamera : String,Codable,CustomStringConvertible {
     var description: String{
         return self.rawValue
     }
-    case ALL
-    case FHAZ
-    case RHAZ
-    case MAST
-    case CHEMCAM
-    case MAHLI
-    case MARDI
-    case NAVCAM
-    case PANCAM
-    case MINITES
+    case ALL = "ALL"
+    case FHAZ = "FHAZ"
+    case RHAZ = "RHAZ"
+    case MAST = "MAST"
+    case CHEMCAM = "CHEMCAM"
+    case MAHLI = "MAHLI"
+    case MARDI = "MARDI"
+    case NAVCAM = "NAVCAM"
+    case PANCAM = "PANCAM"
+    case MINITES = "MINITES"
 }

@@ -1,13 +1,13 @@
 //
-//  ImageViewController.swift
+//  PhotoDetailViewContoller.swift
 //  Nasassia
 //
-//  Created by ONUR BOSTAN on 27.01.2024.
+//  Created by ONUR BOSTAN on 29.01.2024.
 //
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class PhotoDetailViewContoller: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
